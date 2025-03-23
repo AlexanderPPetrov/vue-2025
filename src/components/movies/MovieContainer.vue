@@ -1,6 +1,8 @@
 <template>
-    <search-input v-model="searchValue"></search-input>
-    <movie-list class="in-container" v-if="filteredMovies.length" :movie-list="filteredMovies"></movie-list>
+    <search-input v-model="searchValue">
+        <div>Намери филм:</div>
+    </search-input>
+    <movie-list class="font-bold in-container" v-if="filteredMovies.length" :movie-list="filteredMovies"></movie-list>
     <div v-else>
         Няма намерени филми!
     </div>

@@ -1,4 +1,5 @@
 <template>
+    <slot></slot>
     <input v-model="model" type="text">
 </template>
 
